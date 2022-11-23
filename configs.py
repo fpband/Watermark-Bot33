@@ -20,7 +20,7 @@ class Config(object):
 	OWNER_ID = int(os.environ.get("OWNER_ID", "763990585"))
 	CAPTION = "By @AHToolsBot"
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "fi2li123robot")
-	DATABASE_URL = os.environ.get("DATABASE_URL")
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abirhasan2005:abirhasan@cluster0.lb2tp.mongodb.net/cluster0?retryWrites=true&w=majority")
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", False))
 	USAGE_WATERMARK_ADDER = """
@@ -31,7 +31,7 @@ Hi, I am Video Watermark Adder Bot!
 
 __Note: I can only process one video at a time. As my server is Heroku, my health is not good. If you have any issues with Adding Watermark to a Video, then please Report at [Support Group](https://t.me/linux_repo).__
 
-Desgined by @AbirHasan2005
+Desgined by @AbirHasan
 """
 	PROGRESS = """
 Percentage : {0}%
